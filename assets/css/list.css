@@ -1,0 +1,261 @@
+#list-header {
+  background-image: url("../images/list/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 986px;
+}
+
+#list-logoBeauvais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#list-burgerMenu {
+}
+
+#list-choixLangues li {
+  justify-content: flex-end;
+  display: flex;
+  list-style: none;
+}
+
+#list-choixLangues {
+  color: white;
+}
+
+#list-chambresHotes {
+  text-align: right;
+  font-size: 50px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Helvetica Neue LT Std MdCn", sans-serif;
+}
+
+#list-navigation p, a {
+  color: var(--orange);
+}
+
+#list-navigation {
+  position: absolute;
+  background-color: white;
+  height: 95px;
+  width: 803px;
+  top: 58rem;
+  left: 24rem;
+  text-align: center;
+}
+
+#list-paragrapheNav {
+  font-size: 50px;
+  padding-top: 4px;
+  padding-bottom: 35px;
+}
+
+#list-paragrapheNav a {
+  text-decoration: none;
+}
+
+#list-paragrapheNav a:hover {
+  color: var(--orange);
+}
+
+#list-filtre h1 {
+  color: var(--orange);
+}
+
+#list-filtre {
+  position: absolute;
+  top: 1115px;
+  left: 24rem;
+}
+
+#list-checkAnimaux {
+  left: 28rem;
+}
+
+#list-btnRecherche {
+  position: absolute;
+  font-size: 24px;
+  text-align: center;
+  background-color: var(--orange);
+  padding-top: 2px;
+  width: 300px;
+  height: 50px;
+  left: 22rem;
+}
+
+/* LOGO BEAUVAIS ORANGE */
+
+#list-logoVB-orange {
+  position: absolute;
+  top: 14rem;
+  right: 3rem;
+}
+
+/* FILTERS, CHECKBOX & BUTTON */
+
+#row-checkbox-filter {
+  position: absolute;
+  top: 25rem;
+}
+
+#row-checkbox-filter2 {
+  position: absolute;
+  top: 73rem;
+}
+
+#row-checkbox-filter3 {
+  position: absolute;
+  top: 42rem;
+}
+
+#list-filtreBouton {
+  position: absolute;
+  left: 61.5rem;
+}
+
+#list-filtreBouton button {
+  background: none;
+  border: none;
+}
+
+/* GRIDS */
+
+#list-gridResults {
+  position: absolute;
+  top: 32rem;
+}
+
+#list-gridResults2 {
+  position: absolute;
+  top: 80rem;
+  left: 2rem;
+}
+
+#list-gridMap {
+  width: 379px;
+  height: 580px;
+}
+
+#list-gridMap2 {
+  position: absolute;
+  top: 49rem;
+  right: 13rem;
+  width: 850px;
+  height: 694px;
+}
+
+#list-btnSearch1 {
+  position: absolute;
+  top: 11rem;
+  left: 40rem;
+  color: var(--orange);
+}
+
+#list-btnSearch1 p {
+  background-color: white;
+  padding-top: 5px;
+  padding-left: 24px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+/* PAGINATION */
+
+#list-firstPagination {
+  position: absolute;
+  top: 72rem;
+  left: 45rem;
+}
+
+#list-firstPagination a {
+  background-color: #;
+}
+
+#list-secondPagination {
+  position: absolute;
+  top: 40rem;
+  left: 30rem;
+}
+
+#list-destinationBeauvais {
+  position: absolute;
+  top: 50rem;
+  left: 53rem;
+  width: 237px;
+}
+
+#list-destinationBeauvais p {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--orange);
+}
+
+#list-checkDestination {
+  font-weight: bold;
+  background-color: #ffcccc;
+}
+
+.list-checkBoxPurple {
+  font-weight: bold;
+  color: white;
+  background-color: #993399;
+  padding: 10px;
+}
+
+.list-select {
+  list-style: none;
+}
+
+.list-borderBottom {
+  border-bottom: 4px solid var(--orange);
+}
+
+.list-dropDown-space {
+  border: 1px solid grey;
+  padding-top: 10px;
+  padding-right: 58px;
+  padding-bottom: 10px;
+  margin-right: 60px;
+}
+
+.list-column p {
+  font-weight: 600;
+  color: var(--orange);
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.list-gridCards {
+  width: 320px;
+  height: 235px;
+}
+
+.list-pagination a {
+  padding: 14px 18px;
+  transition: background-color .3s;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.list-pagination a.active {
+  background-color: #993399;
+  color: white;
+}
+
+.list-pagination a:hover:not(.active) {background-color: #993399;}
+
+.list-circleReserver {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.3rem;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: var(--orange);
+
+}

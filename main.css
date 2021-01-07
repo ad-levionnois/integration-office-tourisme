@@ -1,0 +1,1467 @@
+/*FONT FAMILY*/
+@font-face {
+font-family: 'Helvetica Neue LT Std 57 Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Neue LT Std 57 Condensed'), url('assets/fonts/HelveticaNeueLTStd-Cn.woff') format('woff');
+}
+@font-face {
+font-family: 'Helvetica Neue LT Std 56 Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Neue LT Std 56 Italic'), url('assets/fonts/HelveticaNeueLTStd-It.woff') format('woff');
+}
+@font-face {
+font-family: 'Helvetica Neue LT Std 47 Light Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Neue LT Std 47 Light Condensed'), url('assets/fonts/HelveticaNeueLTStd-LtCn.woff') format('woff');
+}
+@font-face {
+font-family: 'Helvetica Neue LT Std 45 Light';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Neue LT Std 45 Light'), url('assets/fonts/HelveticaNeueLTStd Lt.woff') format('woff');
+}
+@font-face {
+font-family: 'Helvetica Neue LT Std 77 Bold Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Neue LT Std 77 Bold Condensed'), url('assets/fonts/HelveticaNeueLTStd-BdCn.woff') format('woff');
+}
+
+:root {
+  --orange : #e7532b;
+  --purple : #af418e;
+  --gray : #f2f2f2;
+  --black : #050505;
+}
+
+
+/***************************************************** HOME *****************************************************************/
+
+
+
+/* BURGER MENU NAV*/
+.home-burgerMenuDropDown {
+  position: relative;  z-index: -2;
+}
+.home-container {
+  margin-top : -50px;
+}
+.home-burgerMenuDropDown h2 {
+
+  font-weight: 700;  font-size: 3rem;
+  }
+.home-burgerMenu nav {
+  height: 160px;  top: 50px;  z-index: 1;
+}
+.home-BurgerMenuDropDownDescription {
+  margin-top: -40px;
+}
+.home-BurgerMenuDropDownDescription a {
+  color: white;
+}
+.home-BurgerMenuDropDownDescription a {
+  text-decoration: none;
+}
+.home-burgerMenuDropDown h2:hover  {
+  font-size: 3.5rem;
+}
+
+
+
+
+/*--Indicator-Carousel-Header--*/
+.home-carouselIndicators li{
+  margin-right: 15px; width: 30px; height: 30px; opacity: 100%; border-radius: 100%; background-color: var(--orange);
+}
+.home-carouselIndicators .active{
+  background-color: var(--purple);
+}
+/*--Logo-Header--*/
+.home-logoBan{
+  width: 115px; height: auto;top: 30px;  margin-left: auto;  margin-right: auto;  left: 0;  right: 0;  text-align: center;
+}
+/*--Dropdown-Langage--*/
+.home-langagePicker{
+  width: 115px;  height: auto;  top: 2vh;  margin-left: auto;  margin-right: auto;  left: 90vw;  right: 0;  text-align: center;
+}
+/*--Mini-slider-Header--*/
+.home-miniSliderImg{
+  overflow: hidden;  width:320px;  top: -40vh;  left: 75vw;
+}
+.home-innerCarouselMiniSlider{
+  padding-left: 4vw;  padding-right: 1vw;
+}
+.home-miniSliderControlPrev{
+  width: 50px;  height: auto;  left: 0px;  top: 50px;  opacity: 100%;
+}
+.home-miniSliderControlNext{
+  width: 50px;  height: auto;  right: 0px;  top: 50px;  opacity: 100%;
+}
+
+/*--Container-Covid--*/
+.hom-containerCovid{
+  height: 80px;  background-color: var(--orange);
+}
+.home-textCovid{
+  text-align: center;
+}
+
+/*--Container-Agenda--*/
+.home-containerAgenda{
+  width: auto;  height: 1100px;
+}
+.home-titreAgenda{
+  font-family: 'Helvetica Neue LT Std 77 Bold Condensed';  font-size: 75px;  margin-top: 50px;  color: var(--orange)
+}
+.home-catAgenda{
+  font-family: 'Helvetica Neue LT Std 57 Condensed';  margin-top: 75px;
+}
+.home-catAgenda a{
+  text-decoration:none;
+}
+.home-listeAgenda::first-letter{
+  font-size: 150%;
+}
+.home-containerAgendaPhoto{
+  margin-top: 40px;
+}
+.home-agendaSlider{
+  top: 60vh;  left: 60vw;  width: 515px;  height: 25vw;  float: right;
+}
+.home-listeAgenda {
+  text-align: center;
+}
+.home-catAgenda a {
+  color: var(--black);  text-transform: uppercase;  display: inline-block;  position: relative;
+}
+.home-catAgenda a:after {
+  background: none repeat scroll 0 0 transparent;  bottom: 0;  content: "";  display: block;  height: 2px;  left: 50%;  position: absolute;  background: var(--orange);  transition: width 0.3s ease 0s, left 0.3s ease 0s;  width: 0;
+}
+.home-catAgenda a:hover:after {
+  width: 100%;  left: 0;
+}
+.home-carouselControlIconAgenda{
+  width: 50px;  height: auto;
+}
+.home-agendaSliderControlnext{
+  top: 62vh;  right: 8vw;  opacity: 100%;
+}
+.home-agendaSliderControlPrev{
+  top: 62vh;  left: 8vw;  opacity: 100%;
+}
+
+/*--Container-Visit--*/
+.home-containerVisite{
+  background-color: #333333;  height: 800px;  display: flex;  justify-content: center;
+}
+.home-visiteRow1{
+  margin-top: 50px;
+}
+.home-imgTitle1{
+  width: 300px;  height: auto;
+}
+.home-imgTitle2{
+  width: 220px;  height: auto;
+}
+.home-txtTitle{
+  font-family: 'Helvetica Neue LT Std 47 Light Condensed';  font-size: 30px;
+}
+.home-containerSlider{
+  margin-top: 250px;
+}
+.home-imgSlider1{
+  width: 20vw;  height: 60vh;  box-shadow: 0px 5px 10px 1px rgba(238, 0, 255, .2);
+}
+.home-imgSlider2{
+  width: 45vw;  height: 60vh;  box-shadow: 0px 5px 10px 1px rgba(238, 0, 255, .2);
+}
+.home-imgSlider3{
+  width: 20vw;  height: 60vh;  box-shadow: 0px 5px 10px 1px rgba(238, 0, 255, .2);
+}
+
+.home-acordeonForfait{
+  width: 100%;  height: auto;
+}
+
+/*--Container-Activités--*/
+.home-logoServices{
+  width: 105px;  height: 105px;
+}
+.home-wrapperLogoServices{
+  background-color: #333333;  padding-bottom: 20px;
+}
+
+/*--Container-Share--*/
+.home-containerShare{
+  padding-top: 100px;  background-color: #333333;  height: 260px;  width: 100%;
+}
+.home-htVisitBeauvais{
+  color: var(--purple)
+}
+.home-txtShare{
+  font-family: 'Helvetica Neue LT Std 47 Light Condensed';  font-size: 35px;
+}
+
+/*--Social-Wall--*/
+.home-imgSocialWall{
+  background-color: #d0a1d0; width: 100%;  height: auto;
+}
+
+/* BURGER MENU NAV*/
+
+
+
+
+
+/*--media-queries--*/
+@media (max-width: 900px){
+  .home-megaWrapper{
+    display: none;
+  }
+  .home-megaWrapperMobile{
+    display: block;
+  }
+}
+
+@media (min-width: 900px){
+  .home-megaWrapper{
+    display: block;
+  }
+  .home-megaWrapperMobile{
+    display:none;
+  }
+}
+
+
+/*--MOBILE--*/
+.home-mobileContainerHeader{
+  background-color: white;
+}
+
+.home-mobileContainerCovid{
+  background-color: var(--orange);  width: auto;  height: 40px;  text-align: center;  padding-top: 5px;  font-family: 'Helvetica Neue LT Std 77 Bold Condensed';  font-size: 20px;
+}
+
+.home-mobileTextAgenda1{
+  margin-top: 10px;  margin-left: 5px;  margin-bottom: 0px;  font-family: 'Helvetica Neue LT Std 57 Condensed';  color: var(--orange);  font-size: 28px;
+}
+
+.home-mobileTextAgenda2{
+  margin-top: 0px;  margin-left: 5px;  font-family: 'Helvetica Neue LT Std 57 Condensed';  color: var(--purple);  font-size: 20px;
+}
+
+.home-mobileImgAgenda{
+  width: 230px;  height: 130;  text-align: center;
+}
+
+.home-mobileAgendaMarginB{
+  margin-bottom: 40px;
+}
+
+.home-mobileAgendaDateMois{
+  font-family: 'Helvetica Neue LT Std 57 Condensed';  color: var(--purple);  text-align: center;  margin-bottom: 0px;
+}
+.home-mobileAgendaDateMois{
+  font-size: 80%;
+}
+
+.home-mobileAgendaSousTitre{
+  font-family: 'Helvetica Neue LT Std 57 Condensed';  text-align: center;  margin-top: 0px;
+}
+
+.home-mobileAgendaFlechePrev{
+  width: 25px;  height: auto;  margin-left: 2rem;  margin-right: 2rem;
+}
+
+.home-mobileAgendaFlecheNext{
+  width: 25px;  height: auto;  margin-left: 2rem;  margin-right: 2rem;
+}
+
+.home-mobileAgendaBouton{
+  margin-right: 1rem;  margin-bottom: 20px;
+}
+
+.home-mobileContainerActivites{
+  background-color: #333333;
+}
+
+.home-mobileContainerActivites p{
+  font-family: 'Helvetica Neue LT Std 57 Condensed';  color: var(--purple);
+}
+
+.home-mobileActiviteLogoRows{
+  text-align: center;
+}
+
+.home-mobileLogoActivites{
+  width: 40px;  height: 40px;  margin-top: 20px;
+}
+
+.home-mobileContainerForfaits1{
+  background-color: var(--orange);  height: 100px;  text-align: center;  font-family: 'Helvetica Neue LT Std 77 Bold Condensed';  font-size: 20px;  padding: 40px;
+}
+
+.home-mobileContainerForfaits2{
+  background-color: var(--purple);  height: 100px;  text-align: center;  font-family: 'Helvetica Neue LT Std 77 Bold Condensed';  font-size: 20px;  padding: 40px;
+}
+
+.home-mobileHotelImg1{
+  margin-top: 40px;
+}
+
+.home-mobileHotelImg2{
+  margin-top: 40px;
+}
+
+.home-mobileContainerPreFooter{
+  background-color: #333333;
+}
+
+.home-mobileTxtPreFooter{
+  font-family: 'Helvetica Neue LT Std 47 Light Condensed';  font-size: 20px;  margin-left: 20px;  padding-top: 20px;
+}
+
+.home-mobileHTPreFooter{
+  font-family: 'Helvetica Neue LT Std 77 Bold Condensed';  color: var(--purple);  font-size: 35px;
+}
+
+.home-mobileLogoPreFooter{
+  width: 120px;  height: auto;  margin-left: 20px;  margin-bottom: 20px;
+}
+
+/***************************************************** DETAIL *****************************************************************/
+
+/* FONTS */
+
+@font-face {
+    font-family:'sirichana';
+    src: url('assets/fonts/detail/1 Bold.eot');
+	  src: url('assets/fonts/detail/1 Bold.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/detail/1 Bold.woff2') format('woff2'),
+		url('assets/fonts/detail/1 Bold.woff') format('woff'),
+		url('assets/fonts/detail/1 Bold.svg#1 Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'sirichana';
+    src: url('assets/fonts/detail/1 Regular.eot');
+	  src: url('assets/fonts/detail/1 Regular.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/detail/1 Regular.woff2') format('woff2'),
+		url('assets/fonts/detail/1 Regular.woff') format('woff'),
+		url('assets/fonts/detail/1 Regular.svg#1 Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+
+/* TYPO */
+.detail {
+  font-family: "Helvetica Neue LT Std 57 Condensed";
+}
+.detail h1, h2, h3, h4, .detail-price p, .detail-titleStar{
+  color : var(--orange);
+}
+.detail h1{
+  font-size: 5rem;
+}
+.detail h2{
+  font-size: 4rem;
+}
+.detail-breadcrumbs a {
+  font-size: .7rem;
+  color : var(--orange);
+  font-weight: 700;
+}
+#detail-description .detail-titleStar {
+  font-size: 50px;
+}
+#detail-description .detail-titleStar + p {
+  font-size: 1.6rem;
+}
+.detail-confort h4 {
+  font-size: 2rem;
+}
+.detail-ConfortMoreHoverDescription p {
+  color: var(--purple);
+  font-size: 0.95rem;
+}
+.detail-price h3::first-letter {
+  font-size: 2.5rem;
+}
+
+.detail-price .detail-priceDesktopTarif {
+  font-family: "sirichana";
+  font-size: 2rem;
+}
+.detail-price .detail-priceDesktopTarif > span {
+  font-size: 3rem;
+}
+.detail-price .detail-priceDesktopTarif > span > span {
+  font-size: 1.5rem;
+}
+
+.detail-price .detail-priceDesktopTarif::first-letter {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.detail-carouselDescription h4 {
+  font-size:2rem;
+  font-weight: 600;
+}
+.detail-carouselDescription p {
+  font-size: 2rem;
+}
+footer h5 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+footer h5 + p {
+  font-size: 1.7rem;
+  line-height: 1.2rem;
+}
+footer .footer-BeauvaisDescriptionDesktop{
+  font-size: .8rem;
+}
+/* GENERAL */
+.detail-boxShadow {
+  box-shadow: 0px 10px 20px grey;
+}
+.detail a:hover {
+  text-decoration: none;
+}
+
+/* BURGER MENU NAV*/
+#detail-burgerMenu .detail-logoMobile {
+  display: none;
+}
+#detail-burgerMenu nav {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+#detail-burgerMenu nav .detail-burgerMenuIcon{
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+/* NAV */
+#detail-burgerMenu .detail-titleStar {
+  font-size: 70px;
+  margin-top: -38px;
+  margin-bottom: -55px;
+  color : var(--orange);
+}
+
+/* BURGER MENU DROPDOWN */
+#detail-burgerMenuDropDown {
+  background-color : var(--orange);
+  padding-bottom: 3rem;
+  display: none;
+  z-index :999;
+  position: absolute;
+  width: 100%;
+}
+#detail-burgerMenuDropDown h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 1rem;
+}
+#detail-burgerMenuDropDown .detail-burgerMenuDropDownContainer {
+  margin-top : -50px;
+}
+#detail-burgerMenuDropDown .detail-BurgerMenuDropDownDescription {
+  margin-top: -40px;
+}
+#detail-burgerMenuDropDown .detail-BurgerMenuDropDownDescription a {
+  color: white;
+}
+#detail-burgerMenuDropDown .detail-BurgerMenuDropDownDescription a {
+  text-decoration: none;
+}
+#detail-burgerMenuDropDown h2:hover  {
+  font-size: 3.5rem;
+}
+.detail-burgerMenuDropDownIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.detail-burgerMenuDropDownIconDiscover {
+  padding-bottom: 3rem;
+}
+.detail-burgerMenuDropDownIcon {
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+/* HEADER */
+#detail-banner {
+  background: url('assets/images/detail/header.jpg');
+  height: 692px;
+}
+
+     /* Modal */
+     #detail-bannerModal{
+       display: none;
+       position: fixed;
+       z-index: 1;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       overflow: auto;
+       background-color: rgb(0,0,0);
+       background-color: rgba(0,0,0,0.9);
+       padding-left: 9rem;
+       padding-top: 15rem;
+     }
+
+     @keyframes zoom {
+       from {transform:scale(0)}
+
+       to {transform:scale(1)}
+     }
+
+     /*  Close Button */
+     .detail-bannerModalClose {
+       position: absolute;
+       top: 15px;
+       right: 35px;
+       color: #f1f1f1;
+       font-size: 40px;
+       font-weight: bold;
+       transition: 0.3s;
+     }
+
+     .detail-bannerModalClose:hover,
+     .detail-bannerModalClose:focus {
+       color: #bbb;
+       text-decoration: none;
+       cursor: pointer;
+     }
+
+
+/*SECTION DESCRIPTION */
+#detail-confortMoreDropDown {
+  display: none;
+}
+#detail-confortMoreDescriptionWifi, #detail-confortMoreDescriptionHairdryer, #detail-confortMoreDescriptionPhone, #detail-confortMoreDescriptionTv,
+#detail-confortMoreDescriptionParabole, #detail-confortMoreDescriptionWindows {
+  display: none;
+}
+.detail-descriptionMobile {
+  display: none;
+}
+#detail-description{
+  background-color: white;
+  margin-top: -130px;
+  margin-bottom: 10rem;
+  padding-top: 3rem;
+}
+.detail-confortMoreCircle {
+  border: 1px solid var(--orange);
+  width: 4rem;
+  height:4rem;
+  border-radius: 5rem;
+}
+.detail-confortMoreCircle:hover {
+  background-color: var(--purple);
+  border: none;
+  cursor: url(hand.cur), pointer;
+}
+#detail-confortMoreDescriptionWifi {
+  margin-left: 6.8rem;
+}
+#detail-confortMoreDescriptionHairdryer {
+  margin-left: 13.6rem;
+}
+#detail-confortMoreDescriptionPhone {
+  margin-left: 21.8rem;
+}
+#detail-confortMoreDescriptionTv {
+  margin-left: 29.8rem;
+}
+#detail-confortMoreDescriptionParabole {
+  margin-left: 38.2rem;
+}
+#detail-confortMoreDescriptionWindows {
+  margin-left: 45rem;
+}
+
+/* SECTION CHAMBRE */
+.detail-priceMobile {
+  display: none;
+}
+.detail-carouselIndicators li{
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-indent: 0px;
+  text-align: center;
+  color: #000;
+}
+
+.detail-carouselIndicators .active{
+    border: 3px solid var(--purple)
+}
+.detail-carouselSlide {
+  margin-left: 3rem;
+}
+
+.detail-carouselDescription {
+  top:5rem;
+  right:5rem;
+  width: 567px;
+  height: 460px;
+  margin-top: -45rem;
+}
+.detail-carouselDescription p {
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+.detail-accecibiltyPartBgOrange {
+  background-color : var(--orange);
+  bottom: 0;
+  width: 100%;
+  height: 93px;
+}
+.detail-accecibiltyPartRoundPurple {
+  border-radius: 50rem;
+  height: 3rem;
+  width: 3rem;
+  background-color : var(--purple);
+}
+.detail-accecibiltyPartIcon {
+  margin-top: -15px;
+}
+.detail-price {
+  height: 835px;
+  padding-left: 3rem;
+  padding-right: 5rem;
+}
+
+/* SECTION CARTE */
+.detail-map iframe {
+  width: 100%;
+  height:100%;
+}
+.detail-map {
+  height: 640px;
+}
+
+/*FOOTER*/
+.footer-mobile{
+  display: none;
+}
+footer {
+  background-color: var(--orange);
+}
+.footer-guide, footer button, .footer-network{
+  font-family: "sirichana";
+  font-weight: bold;
+}
+footer button{
+  font-size: 1.2rem;
+  border : 2px solid #b9532b;
+  border-radius: .1rem;
+  background-color: transparent;
+  color: white;
+}
+footer button:hover{
+  background-color: white;
+  color: var(--orange);
+}
+footer hr {
+  height: 600px;
+  width : 3px;
+  background-color: white;
+}
+.footer-lign {
+  border-left: 3px solid white;
+  margin-top: 5rem;
+}
+.footer-btn-brochure{
+  width: 190px;
+  margin: auto;
+}
+.footer-btn-newletter {
+  width: 320px;
+  margin: auto;
+}
+.button-group {
+  width: 20rem;
+}
+.footer-network {
+  padding-left: 7.8rem;
+  font-size: 1.5rem;
+}
+
+
+
+
+/* VERSION MOBILE */
+@media (max-width: 576px) {
+
+  /* TYPO */
+  .detail h1{
+    font-size: 2.3rem;
+  }
+  .detail h2{
+    margin-top : 1rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .detail-titleStar {
+    font-size: 30px;
+  }
+  .detail-titleStar + p {
+    font-size: 1.2rem;
+  }
+  .detail-titleStar + p span {
+    display: none;
+  }
+  .detail-confort h4 {
+    display: none;
+  }
+  .detail-confort h4 + img {
+    width: 5rem;
+  }
+
+  /* GENERAL */
+  .detail-boxShadow {
+    box-shadow: 0px 0px 0px grey;
+  }
+
+  /* BURGER MENU NAV*/
+  #detail-burgerMenu .detail-logoDesktop, .detail-breadcrumbs{
+    display: none;
+  }
+  #detail-burgerMenu nav {
+    height: 240px;
+  }
+  #detail-burgerMenu nav .detail-burgerMenuIcon {
+      width : 2.5rem;
+      padding-left: 0.5rem;
+      padding-top: 1rem;
+    }
+  .detail-navMobile {
+    position: absolute;
+    top: 1rem;
+    left: 6rem;
+  }
+  .detail-navMobile h1 {
+    padding-top: 1rem;
+  }
+  .detail-navMobile h1, .detail-navMobile  .detail-titleStar{
+    margin-left: -2.5rem;
+  }
+  #detail-burgerMenu .detail-logoMobile{
+    display:block;
+    width: 8.5rem;
+  }
+  #detail-burgerMenu .detail-titleStar {
+    font-size: 30px;
+    padding-top: 1.5rem;
+  }
+
+  /* BURGER DROPDOWN */
+  #detail-burgerMenuDropDown {
+    background-color : var(--orange);
+    display: none;
+  }
+  .detail-burgerMenuDropDownLogoWhite {
+    width: 11rem;
+    height: 11rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: .8rem;
+  }
+  #detail-burgerMenuDropDown h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 0;
+    line-height: 1rem;
+    text-align: center;
+  }
+  #detail-burgerMenuDropDown .detail-burgerMenuDropDownContainer {
+    margin-top : 0px;
+  }
+  #detail-burgerMenuDropDown .detail-BurgerMenuDropDownDescription {
+    margin-top: 0px;
+  }
+  #detail-burgerMenuDropDown h2:hover  {
+    font-size: 1.8rem;
+  }
+  .detail-burgerMenuDropDownIcons {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    flex-direction: row-reverse;
+    width: 5rem;
+  }
+  .detail-burgerMenuDropDownIcons img {
+    margin-left: 1rem;
+  }
+  .detail-burgerMenuDropDownIconMeteo{
+    width: 2rem;
+  }
+  .detail-burgerMenuDropDownIconLocation{
+    width: 1.2rem;
+  }
+  .detail-burgerMenuDropDownIconDiscover {
+    padding-bottom: 0;
+    width: 2rem;
+  }
+
+  .detail-burgerMenuDropDownIcon {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 5rem;
+  }
+
+  /* HEADER */
+  #detail-banner {
+    background: url('assets/images/detail/header.jpg') no-repeat;
+    height: 411px;
+    background-size: 350%;
+  }
+
+  /*SECTION DESCRIPTION */
+  .detail-priceMobile {
+    display: block;
+  }
+  .detail-descriptionMobile{
+    display: block;
+  }
+  .detail-descriptionMobile{
+    height:467px;
+  }
+  .detail-descriptionDesktop{
+    display: none;
+  }
+  .detail-confort h4 + img {
+      width: 4rem;
+  }
+
+  /* SECTION CHAMBRE */
+  .detail-carouselDescription {
+    display: none;
+  }
+  .detail-priceDesktop  {
+    display: none;
+  }
+  .detail-carouselIndicators li{
+    width: 20px;
+    height: 20px;
+    background-color: var(--orange);
+    font-size: .8rem;
+  }
+  .detail-carouselIndicators .active{
+      border: none;
+  }
+  .detail-carouselSlide {
+    margin-left: 0rem;
+  }
+  .detail-priceMobile {
+    height: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    color : var(--orange);
+  }
+  .detail-priceMobile  h3::first-letter {
+    font-size:2.5rem;
+  }
+
+  .detail-priceMobile h3, .detail-priceMobile p {
+    font-family: "sirichana";
+  }
+  .detail-priceMobile h3 {
+    font-family: "sirichana";
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom:0px;
+  }
+  .detail-priceMobileTarif{
+    font-size: 2.2rem;
+    margin-bottom:0px;
+  }
+  .detail-priceMobileTarif > span {
+    font-size: 3.5rem;
+  }
+  .detail-priceMobileTarif > span > span {
+    font-size: 2rem;
+  }
+
+  .detail-priceMobile  h3::first-letter, .detail-priceMobileTarif::first-letter {
+    font-size: 3.2rem;
+  }
+
+  .detail-priceMobileBgOrangeTarif {
+    background-color : var(--orange);
+    height: 100px;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .detail-priceMobileBgOrangeAdress {
+    background-color : var(--orange);
+    height: 72px;
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .detail-CarouselDescription{
+    line-height: 2rem;
+    color: var(--orange);
+    font-size: 1.7rem;
+    font-family: "sirichana";
+    text-transform: none;
+  }
+
+
+  /*MAP */
+  .detail-map {
+    height: 335px;
+  }
+
+  /* FOOTER*/
+  .footer-desktop {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+  }
+  .footer-mobile h5{
+    font-size: 2.7rem;
+    font-family: "sirichana";
+    font-weight: bold;
+  }
+  .footer-mobile .button-group {
+    width: 20rem;
+    font-size: .2rem;
+  }
+  .footer-mobile button {
+    font-size: 1.3rem;
+    background-color: white;
+    color: var(--orange);
+  }
+  .footer-network {
+    padding-left: 0rem;
+    font-size: 2rem;
+  }
+
+}
+
+
+/***************************************************** TEXT *****************************************************************/
+
+
+.text-h1 {
+  color: var(--orange);
+  display: flex;
+  font-family: "Helvetica Neue LT Std 47 Light Condensed";
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-top: 80px;
+}
+
+/*SECTION BANNER*/
+.text-header {
+  height: 800px;
+  position: relative;
+}
+.text-imgBanner {
+  position: relative;
+}
+.text-imgBgBanner {
+  width: 100%;
+}
+.text-containerBanner {
+  background-color: var(--orange);
+  color: white;
+  padding-left: 160px;
+  padding-top: 55px;
+  position: absolute;
+  bottom: 0;
+  font-family: "Helvetica Neue LT Std 47 Light Condensed";
+  font-size: 1rem;
+}
+.text-buttonDecouvrir {
+  border: 1px solid white;
+  background-color: var(--orange);
+  color: white;
+  width: 23%;
+  font-size: 0.7rem;
+  margin-bottom: 40px;
+}
+.text-buttonDecouvrir:hover {
+  background-color: white;
+  color: var(--orange);
+}
+.text-iconSocialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 220px;
+}
+.text-iconSocialMedia img {
+  width: 35px;
+  padding-bottom: 8px;
+}
+.text-fontOrange {
+  color: var(--orange);
+}
+.text-fontBlack {
+  color: var(--black);
+}
+.text-breadcrumbs {
+  font-family: "Helvetica Neue LT Std 57 Condensed";
+  display: flex;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding-left: 160px;
+}
+.text-breadcrumbs a{
+  text-decoration: none;
+}
+.text-breadcrumbs h3{
+  font-size: 1rem;
+}
+
+/*SECTION SERVICES*/
+.text-titleServices {
+  font-family: "Helvetica Neue LT Std 47 Light Condensed";
+  padding-left: 160px;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  margin-top: -55px;
+}
+.text-titleServices h2 {
+  padding-top: 20px;
+  font-weight: bold;
+}
+.text-iconRestau {
+  width:8rem;
+  padding-left: 20px;
+}
+.text-fontPurple {
+  color: var(--purple);
+}
+.text-fontWhite {
+  color: white;
+}
+.text-imgServices img{
+  width: 100%;
+}
+.text-encadreText {
+  font-family: "Helvetica Neue LT Std 57 Condensed";
+  font-size: 1.3rem;
+  text-align: center;
+  margin-left: 160px;
+  margin-right: 160px;
+  background-color: white;
+  box-shadow: -2px 3px 8px #555;
+  border-top: 10px solid #c9c8c9;
+  border-right: 8px solid #c9c8c9;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-weight: bold;
+  margin-top: -40px;
+  position: absolute;
+}
+.text-infoWifiAtm {
+  font-family: "Helvetica Neue LT Std 57 Condensed";
+  font-size: 1rem;
+  background-color: var(--gray);
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 80px;
+}
+.text-servicesWifiIcon {
+  padding-right: 80px;
+}
+.text-wifi {
+  display: flex;
+  padding-bottom: 50px;
+}
+.text-atm {
+  display: flex;
+}
+.text-etInfo {
+  font-family: "Helvetica Neue LT Std 57 Condensed";
+  font-size: 1rem;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  box-shadow: -2px 3px 8px #555;
+  border-top: 10px solid #c9c8c9;
+  border-right: 8px solid #c9c8c9;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: -40px;
+}
+.text-symboleEt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -75px;
+}
+.text-infoText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+/*SECTION TRANSPORT*/
+.text-transport {
+  background-color: var(--purple);
+  height: 900px;
+  margin-top: 150px;
+  position: relative;
+  z-index: 2;
+}
+.text-titleTransport {
+  font-family: "Helvetica Neue LT Std 47 Light Condensed";
+  padding-right: 160px;
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 2;
+  margin-top: -40px;
+  right: 0;
+}
+.text-titleTransport h2 {
+  padding-left: 10px;
+}
+.text-iconTransport {
+  width: 25%;
+  position: relative;
+  bottom: 62px;
+}
+.text-carousselPoint {
+  display: none;
+}
+
+/*SECTION COMPAGNIES*/
+.text-compagnies {
+  background-color: var(--gray);
+  height: 930px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.text-titleCompagnies {
+  font-family: "Helvetica Neue LT Std 47 Light Condensed";
+  padding-left: 160px;
+  display: flex;
+  position: absolute;
+  margin-top: -35px;
+}
+.text-iconAvion {
+  width: 30%;
+  position: relative;
+  bottom: 22px;
+  left: 30px;
+}
+.text-logoCompagnies {
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.text-logoCompagnies img {
+  width: 80%;
+}
+.text-titleNavette {
+  font-family: "Helvetica Neue LT Std 47 Light Condensed";
+  background-color: white;
+  width:30%;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 130px;
+  left: 80px;
+  z-index: 2;
+}
+.text-pNavette {
+  font-family: "Helvetica Neue LT Std 47 Light Condensed";
+  background-color: white;
+  width: 60%;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: absolute;
+  margin-top: -120px;
+  left: 220px;
+  z-index: -1;
+}
+.text-pBus {
+  font-family: "Helvetica Neue LT Std 47 Light Condensed";
+  background-color: white;
+  text-align: justify;
+  width: 60%;
+  border-radius: 8px;
+  padding-top: 150px;
+  padding-bottom: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: absolute;
+  margin-top: -120px;
+  left: 190px;
+  bottom: -187px;
+  z-index: -1;
+}
+.text-navette img {
+  width: 60%;
+  position: relative;
+  margin-left: 130px;
+  margin-top: 180px;
+}
+.text-bus img {
+  width: 60%;
+  position: relative;
+  margin-right: 200px;
+  margin-top: 180px;
+}
+.text-bus {
+  display: flex;
+  justify-content: flex-end;
+}
+.text-titleBus {
+  font-family: "Helvetica Neue LT Std 47 Light Condensed";
+  background-color: white;
+  width:30%;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 130px;
+  right: 500px;
+  z-index: 2;
+}
+.text-chevronGauche {
+  width: 10%;
+  position: absolute;
+  top: 70%;
+}
+.text-chevronDroit {
+  width: 10%;
+  position: absolute;
+  top: 70%;
+  right: 20px;
+}
+
+/*VERSION MOBILE*/
+@media (max-width: 767px){
+
+/*SECTION BANNER*/
+.text-containerBanner {
+  display: none;
+}
+.text-h1 {
+  z-index: 500;
+  position: absolute;
+  font-size: 1rem;
+  margin-left: -1rem !important;
+  width: 15rem;
+
+}
+.text-breadcrumbs {
+  display: none;
+}
+.text-header {
+  height: 200px;
+}
+
+/*SECTION SERVICES*/
+.text-sectionServices {
+  margin-bottom: 230px;
+}
+.text-titleServices {
+  padding-left: 0;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+.text-titleServices h2 {
+  padding-top: 0px;
+}
+.text-imgServices {
+  display: none;
+}
+.text-encadreText {
+  padding: 2%;
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: inherit;
+  border: none;
+  box-shadow: -5px 0px 10px #555;
+}
+.text-infoWifiAtm {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 122px;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  padding-top: 60%;
+  height: 765px;
+}
+.text-servicesWifiIcon{
+  text-align: center;
+  padding-right: 0;
+  padding-bottom: 10%;
+}
+.text-wifi {
+  display: block;
+}
+.text-atm {
+  display: block;
+}
+.text-etInfo {
+  width: 85%;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  box-shadow: -5px 0px 10px #555;
+}
+.text-symboleEt {
+  margin-top: -25px;
+}
+.text-symboleEt img{
+  width: 10%;
+}
+.text-infoText {
+  padding-top: 15px;
+  text-align: center;
+}
+.text-mobileFontPurple {
+  color: var(--purple);
+}
+
+/*SECTION TRANSPORT*/
+.text-chevronGauche {
+  display: none;
+}
+.text-chevronDroit {
+  display: none;
+}
+.text-titleTransport {
+  padding-right: 25px;
+  display: block;
+  text-align: center;
+  margin-top: -106px;
+}
+.text-iconTransport {
+  bottom: 30px;
+}
+.text-titleNavette {
+  width: 40%;
+  font-size: 1.2rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 53px;
+  margin-left: 16px;
+  background-color: var(--purple);
+  color: white;
+  border-radius: 25px;
+}
+.text-navette img {
+  margin-top: 70px;
+  margin-left: 58px;
+}
+.text-pNavette {
+  position: inherit;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -20px;
+  padding-top: 25%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 50px;
+}
+.text-bus {
+  display: none;
+}
+.text-transport {
+  height: 500px;
+}
+.text-carousselPoint {
+  display: flex;
+  margin-left: 28%;
+}
+
+/*SECTION COMPAGNIES*/
+.text-titleCompagnies {
+  display: block;
+  padding-left: 18%;
+}
+.text-compagnies {
+  height: 720px;
+  text-align: center;
+}
+.text-logoCompagnies {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 105px;
+  display: block;
+}
+.text-mobileLogoCompagnies {
+  padding-top: 0px;
+}
+.text-logoCompagnies img {
+  width: 40%;
+  padding-bottom: 10%;
+  display: block;
+  margin: auto;
+}
+.text-iconAvion {
+  position: absolute;
+  margin-left: 34%;
+  margin-bottom: 75px;
+}
+
+/************************************************************ LIST **********************************************************/
